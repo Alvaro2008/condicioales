@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplicacion2</title>
+</head>
+<body>
+    EDAD:<input type="text" id="edad"><br>
+    <input type="button" id="ver categoria" onclick="vercategoria()" value="Ver Categoria"><br>
+    
+    <script>
+        function vercategoria(){
+            
+           var edad=document.getElementById("edad").value;
+            edad = parseInt(edad);
+        if(edad<=7){
+            document.write("benjamin");
+        }else{
+            if(edad<=9){
+            document.write("alevin");
+        }else{
+            if(edad<=11){
+            document.write("infantil");
+            }else{
+            document.write("cadete");
+            }  
+        }
+        if(edad<12){
+            document.write("cadete");
+        }
+        }
+    }
+    </script>
+</body>
+</html>

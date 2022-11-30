@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aplicacion1</title>
+</head>
+<body>
+    <h1>Temperatura:</h1>
+    <input type="text" id="temp">
+    <input type="button" value="Ver estado" onclick="ver()">
+    <script>
+        function ver(){
+          //  alert("test");
+          var temp=document.getElementById("temp").value;
+          if(temp<0){
+          var temp=document.write("Hielo")  
+          }  
+          if(temp<100){
+          var temp=document.write("Liquido")
+          }
+          if(temp>100){
+          var temp=document.write("Gaseoso")
+          }
+        }
+    </script>
+</body>
+</html>
